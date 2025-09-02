@@ -1,0 +1,32 @@
+[
+  {
+    "title": "QUICK LINKS",
+    "items": [
+      { "label": "Security & scams", "url": "#" },
+      { "label": "Help & support", "url": "#" },
+      { "label": "Financial assistance", "url": "#" },
+      { "label": "Complaints & compliments", "url": "#" },
+      { "label": "Payment services availability", "url": "#" }
+    ]
+  },
+  {
+    "title": "ABOUT US",
+    "items": [
+      { "label": "About CommBank", "url": "#" },
+      { "label": "Careers at CommBank", "url": "#" },
+      { "label": "Sustainability", "url": "#" },
+      { "label": "Newsroom", "url": "#" },
+      { "label": "Investor centre", "url": "#" }
+    ]
+  },
+  {
+    "title": "IMPORTANT INFORMATION",
+    "items": [
+      { "label": "Accessibility", "url": "#" },
+      { "label": "Important documents", "url": "#" },
+      { "label": "Banking Code of Practice", "url": "#" },
+      { "label": "Cookies policy", "url": "#" },
+      { "label": "Privacy statement", "url": "#" }
+    ]
+  }
+]

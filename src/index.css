@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.nav-item {
+  @apply pt-2 border-transparent border-b-4 hover:border-amber-200 h-[80px] flex items-center text-[16px] font-semibold xl:ms-8 lg:ms-2.5;
+}

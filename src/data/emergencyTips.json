@@ -1,0 +1,25 @@
+{
+  "title": "In an emergency",
+  "tips": [
+    {
+      "highlight": "Disconnect from the internet immediately",
+      "description": "if you suspect your computer or phone has been hacked. This prevents further unauthorized access or data theft."
+    },
+    {
+      "highlight": "Change your passwords",
+      "description": "for any accounts that might have been compromised. Use strong, unique passwords and enable two-factor authentication where possible."
+    },
+    {
+      "highlight": "Contact your bank or service provider",
+      "description": "if you notice suspicious activity on your accounts. They can lock access, investigate transactions, and help you recover funds."
+    },
+    {
+      "highlight": "Report the incident",
+      "description": "to the Australian Cyber Security Centre (ACSC) via ReportCyber so authorities can investigate and prevent further attacks."
+    },
+    {
+      "highlight": "Run a full antivirus scan",
+      "description": "on all devices to remove malware or spyware that may have been installed during the breach."
+    }
+  ]
+}

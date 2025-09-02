@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1",
+    "title": "Secure your Wi‑Fi network",
+    "tips": [
+      {
+        "highlight": "Change the default router password",
+        "description": "Hackers often target routers with factory settings. Use a strong and unique admin password to reduce the risk."
+      },
+      {
+        "highlight": "Enable WPA3 or WPA2 encryption",
+        "description": "This ensures your Wi‑Fi traffic is protected from snooping or unauthorized access."
+      },
+      {
+        "highlight": "Hide your SSID if possible",
+        "description": "Making your network name invisible adds an extra layer of privacy from casual intruders."
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Protect your personal devices",
+    "tips": [
+      {
+        "highlight": "Keep your software up to date",
+        "description": "Regular updates patch vulnerabilities in your operating system and applications."
+      },
+      {
+        "highlight": "Install trusted antivirus software",
+        "description": "Real-time protection helps defend against malware, spyware, and ransomware."
+      },
+      {
+        "highlight": "Use strong device passwords or biometrics",
+        "description": "Avoid easy-to-guess PINs. Use fingerprint or facial recognition where possible."
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Practice safe browsing and communication",
+    "tips": [
+      {
+        "highlight": "Be cautious with email attachments and links",
+        "description": "Phishing attacks often come through emails pretending to be from legitimate companies."
+      },
+      {
+        "highlight": "Use a VPN on public networks",
+        "description": "If working from home or traveling, a VPN encrypts your internet traffic and secures your data."
+      },
+      {
+        "highlight": "Enable two-factor authentication (2FA)",
+        "description": "This adds a second layer of verification to your online accounts, even if your password is compromised."
+      }
+    ]
+  }
+]
