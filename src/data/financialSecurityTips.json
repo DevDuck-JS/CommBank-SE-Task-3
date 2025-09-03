@@ -1,0 +1,106 @@
+[
+  {
+    "id": "1",
+    "title": "Protect Your Login",
+    "tips": [
+      {
+        "highlight": "Use strong, unique passwords",
+        "description": " (mix letters, numbers, and symbols)."
+      },
+      {
+        "highlight": "Store passwords securely",
+        "description": " with a password manager."
+      },
+      {
+        "highlight": "Turn on multi-factor authentication (MFA)",
+        "description": " when available."
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Stay Alert to Scams",
+    "tips": [
+      {
+        "highlight": "Do not click",
+        "description": " on suspicious links or attachments."
+      },
+      {
+        "highlight": "Remember: ",
+        "description": " your bank will never ask for your full password, PIN, or one-time code by email or text."
+      },
+      {
+        "highlight": "Verify requests",
+        "description": " by calling your bank directly."
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Monitor Your Accounts",
+    "tips": [
+      {
+        "highlight": "Check account activity",
+        "description": " regularly for unauthorized transactions."
+      },
+      {
+        "highlight": "Set up alerts",
+        "description": " via text or email for withdrawals, transfers, or unusual activity."
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "title": "Secure Your Devices",
+    "tips": [
+      {
+        "highlight": "Update your devices. ",
+        "description": " keep your phone, tablet, and computer updated with security patches."
+      },
+      {
+        "highlight": "Use antivirus software",
+        "description": " and enable firewalls."
+      },
+      {
+        "highlight": "Avoid public Wi-Fi",
+        "description": " for banking—or use a secure VPN if necessary.."
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "title": "Protect Your Personal Information",
+    "tips": [
+      {
+        "highlight": "Limit your digital foot print ",
+        "description": " Never post your personal details shared on social media."
+      },
+      {
+        "highlight": "Shred sensitive documents",
+        "description": " before discarding them."
+      },
+      {
+        "highlight": "Store financial records",
+        "description": " in a secure location."
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "title": "Practice Safe Banking Habits",
+    "tips": [
+      {
+        "highlight": "Always log out",
+        "description": " after online banking sessions."
+      },
+      {
+        "highlight": "Lock your devices",
+        "description": " with strong PINs or passcodes."
+      },
+      {
+        "highlight": "Report lost",
+        "description": " or stolen cards and devices immediately."
+      }
+    ]
+  }
+]

@@ -3,6 +3,9 @@ import ContentNavBar from "./ContentNavBar.jsx";
 import Card from "./Card.jsx";
 import ListContent from "./ListContent.jsx";
 import EmergencyImage from "../assets/EmergencyImage.png";
+import chatIcon from "../assets/chatIcon.svg";
+import phoneIcon from "../assets/phoneIcon.svg";
+import branchIcon from "../assets/branchIcon.svg";
 
 const Content = () => {
   return (
@@ -13,10 +16,10 @@ const Content = () => {
           <div className="bg-white py-16 ">
             <div className="border-l-16 border-amber-300 px-12">
               <p className="text-[40px] font-bold mb-6">Cybesecurity Tips</p>
-              <p className="text-sm">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Tempore, nobis. Lorem ipsum dolor, sit amet consectetur
-                adipisicing elit. Tempore, nobis.
+              <p className="text-sm font-light">
+                Protecting your money online starts with smart habits. Strong
+                passwords, alerts, and safe browsing go a long way toward
+                keeping your accounts secure.
               </p>
             </div>
           </div>
@@ -25,10 +28,12 @@ const Content = () => {
         {/* Content */}
         <ContentNavBar />
 
-        {/* Home security */}
+        {/* Financial security */}
         <div id="home-security" className="bg-white p-16 scroll-mt-20">
           <div>
-            <p className="text-4xl font-bold mb-6">Stay safe at home</p>
+            <p className="text-4xl font-bold mb-6">
+              Financial Cybersecurity Tips
+            </p>
             <Card />
           </div>
         </div>
@@ -42,53 +47,43 @@ const Content = () => {
             {/* Text - Row on XL */}
 
             <ListContent />
-            {/* <div className="pt-16 pe-16 w-full lg:w-1/2">
-              <p className="text-4xl font-bold mb-10">In an emergency</p>
-              <div className="ps-5 mb-4">
-                <ul className="list-disc font-light space-y-2">
-                  <li>
-                    <span className="font-bold">
-                      Disconnect from the internet immediately{" "}
-                    </span>
-                    if you suspect your computer or phone has been hacked. This
-                    prevents further unauthorized access or data theft.
-                  </li>
-                  <li>
-                    <span className="font-bold">Change your passwords </span>{" "}
-                    for any accounts that might have been compromised. Use
-                    strong, unique passwords and enable two-factor
-                    authentication where possible.
-                  </li>
-                  <li>
-                    <span className="font-bold">
-                      Contact your bank or service provider{" "}
-                    </span>
-                    if you notice suspicious activity on your accounts. They can
-                    lock access, investigate transactions, and help you recover
-                    funds.
-                  </li>
-                  <li>
-                    <span className="font-bold">Report the incident </span> to
-                    the Australian Cyber Security Centre (ACSC) via ReportCyber
-                    so authorities can investigate and prevent further attacks.
-                  </li>
-                  <li>
-                    <span className="font-bold">
-                      Run a full antivirus scan{" "}
-                    </span>
-                    on all devices to remove malware or spyware that may have
-                    been installed during the breach.
-                  </li>
-                </ul>
-              </div>
-            </div> */}
-            {/* Image - Row on XL */}
+
             <div className="w-full">
               <img
                 src={EmergencyImage}
                 alt=""
                 className="z-400 lg:absolute right-0 w-full lg:w-1/2"
               />
+            </div>
+          </div>
+        </div>
+        {/* We can help */}
+        <div className="p-16">
+          <div className="text-3xl font-bold mb-6">We can help</div>
+          <div className="flex justify-between">
+            <div className="help-item">
+              <span>
+                <img src={chatIcon} className="h-16 w-auto" />
+              </span>
+              <p className="text-lg font-semibold pl-6 pr-4 py-2">
+                Your questions answered
+              </p>
+            </div>
+            <div className="help-item border-l-1 border-gray-300">
+              <span>
+                <img src={phoneIcon} alt="" className="ml-6" />
+              </span>
+              <p className="text-lg font-semibold pl-6 pr-4 py-2">
+                Call 13 2221 anytime
+              </p>
+            </div>
+            <div className="help-item border-l-1 border-gray-300">
+              <span>
+                <img src={branchIcon} alt="" className="ml-6" />
+              </span>
+              <p className="text-[20px] font-semibold pl-6 pr-4 py-2">
+                Visit your nearest branch
+              </p>
             </div>
           </div>
         </div>

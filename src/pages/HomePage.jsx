@@ -7,7 +7,7 @@ import Footer from "../components/Footer.jsx";
 const HomePage = () => {
   return (
     <>
-      <div className="bg-gray-200">
+      <div className="bg-gray-100">
         <Navbar />
         <Hero />
         <Content />
