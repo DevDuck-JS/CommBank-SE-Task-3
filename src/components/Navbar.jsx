@@ -19,7 +19,11 @@ const Navbar = () => {
       {/* Mobile Navbar menu */}
 
       {showMobileMenu && (
-        <div className="flex items-center bg-[#231F20] fixed top-0 z-700 h-full w-full text-white">
+        <div
+          className={`flex items-center h-full w-full text-white bg-[#231F20] fixed top-0 z-[700] inset-0 transition-all duration-300 ease-linear ${
+            showMobileMenu ? `translate-x-0` : `translate-x-full`
+          }`}
+        >
           <div className="w-full p-6 fixed top-0 ">
             {/* Close button */}
             <div className="text-end ">
@@ -140,7 +144,7 @@ const Navbar = () => {
           <FontAwesomeIcon
             icon="fa-solid fa-bars"
             className="ps-8 hover:cursor-pointer"
-            onClick={() => setShowMobileMenu((previousState) => !previousState)}
+            onClick={() => setShowMobileMenu((showMobileMenu) => true)}
           />
           <img src={Logo} className="w-auto h-10 ps-8" />
         </div>
