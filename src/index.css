@@ -7,3 +7,7 @@
 .help-item {
   @apply flex items-center;
 }
+
+.mobile-nav-item {
+  @apply flex font-light items-center mb-10;
+}
