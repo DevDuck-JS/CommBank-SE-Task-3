@@ -1,4 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
+import UnderMaintenance from "../pages/UnderMaintenance.jsx";
+
 const ContentNavBar = () => {
   return (
     <div className="flex bg-white h-20 justify-between border-2 border-gray-100 px-8 sticky top-0 z-500">
@@ -13,13 +16,11 @@ const ContentNavBar = () => {
       </div>
 
       {/* Button */}
-      <Router>
-        <div className="flex px-4 items-center ">
-          <Link to="/maintenance" className="highlighted-button">
-            Test your cybersecurity awareness
-          </Link>
-        </div>
-      </Router>
+      <div className="flex px-4 items-center ">
+        <Link to="/maintenance" className="primary-button">
+          Test your cybersecurity awareness
+        </Link>
+      </div>
     </div>
   );
 };

@@ -5,6 +5,10 @@
   --color-primary: #ffcc00; /* Primary yellow */
   --color-secondary: #ffff00; /* Beacon yellow */
   --color-text: #1e1e1e;
+  --color-neutral-white: #ffffff;
+  --color-neutral-lightGray: #ebebeb;
+  --color-neutral-gray: #bebeb9;
+  --color-neutral-black: #1e1e1e;
 
   /* Custom typography */
   --font-display: "Gill Sans", "Lucida Sans";
@@ -16,7 +20,8 @@
 @layer base {
   body {
     color: var(--color-text);
-    font-family: var(--font-display);
+    /* font-family: var(--font-display); */
+    background-color: var(--color-neutral-lightGray);
   }
   h1 {
     font-size: var(--font-size-title);
@@ -41,6 +46,10 @@
   @apply flex font-light items-center mb-10;
 }
 
-.highlighted-button {
+.primary-button {
   @apply flex items-center px-8 bg-primary h-12 rounded-4xl font-light;
+}
+
+.secondary-button {
+  @apply text-[#231f20] border-1 border-[#231f20] rounded-full w-40 px-6;
 }

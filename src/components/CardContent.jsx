@@ -20,7 +20,7 @@ const CardContent = ({ tip }) => {
         </div>
         {/* Button */}
         <div className="w-50 h-20 px-8 pb-8 mt-auto">
-          <div className="text-[#231f20] border-1 border-[#231f20] rounded-full w-40 px-6">
+          <div className="secondary-button">
             <a href="#" className="block text-center py-3 font-light">
               Discover More
             </a>

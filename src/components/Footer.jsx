@@ -22,18 +22,16 @@ const Footer = () => {
           <div className="border-b-1 border-gray-200 relative">
             {/* Footer menu */}
             <div className="grid grid-cols-1 md:grid-cols-4 px-16 py-6">
-              <ul>
-                {footerItems.map((footerItem) => (
-                  <>
-                    <li className="font-bold mb-2">{footerItem.title}</li>
-                    {footerItem.items.map((item) => (
-                      <li className="font-light mb-2 hover:underline hover:underline-offset-4">
-                        <a href="#">{item.label}</a>
-                      </li>
-                    ))}
-                  </>
-                ))}
-              </ul>
+              {footerItems.map((footerItem) => (
+                <ul>
+                  <li className="font-bold mb-2">{footerItem.title}</li>
+                  {footerItem.items.map((item) => (
+                    <li className="font-light mb-2 hover:underline hover:underline-offset-4">
+                      <a href="#">{item.label}</a>
+                    </li>
+                  ))}
+                </ul>
+              ))}
             </div>
 
             {/* Back to top button */}
@@ -46,15 +44,15 @@ const Footer = () => {
 
           {/* Copy right */}
 
-          <div className="py-6 px-16 text-[14px] text-[#706d6e]">
-            <p className="pt-4">
+          <div className="py-6 px-16 text-[#706d6e]">
+            <p className="pt-4 text-[14px]">
               CommBank acknowledges the Traditional Owners of the lands across
               Australia as the continuing custodians of Country and Culture. We
               pay our respect to First Nations peoples and their Elders, past
               and present.
             </p>
 
-            <p className="pt-4">
+            <p className="pt-4 text-[14px]">
               ©2025 Commonwealth Bank of Australia ABN 48 123 123 124 AFSL and
               Australian credit licence 234945
             </p>

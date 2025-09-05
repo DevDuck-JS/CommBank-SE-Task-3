@@ -23,7 +23,7 @@ const Card = () => {
       {/* Button */}
       <div className="flex pt-6 items-center justify-center">
         <div
-          className="highlighted-button"
+          className="primary-button"
           onClick={() => setIsShowMore((previousState) => !previousState)}
         >
           {isShowMore ? "Show fewer tips" : "Show more tips"}
