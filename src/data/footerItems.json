@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "title": "QUICK LINKS",
+    "title": "Quick links",
     "items": [
       { "label": "Security & scams", "url": "#" },
       { "label": "Help & support", "url": "#" },
@@ -12,7 +12,7 @@
   },
   {
     "id": "2",
-    "title": "ABOUT US",
+    "title": "About us",
     "items": [
       { "label": "About CommBank", "url": "#" },
       { "label": "Careers at CommBank", "url": "#" },
@@ -23,7 +23,7 @@
   },
   {
     "id": "3",
-    "title": "IMPORTANT INFORMATION",
+    "title": "Important information",
     "items": [
       { "label": "Accessibility", "url": "#" },
       { "label": "Important documents", "url": "#" },

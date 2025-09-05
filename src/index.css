@@ -58,7 +58,7 @@
 }
 
 .secondary-button {
-  @apply border-1 border-[#231f20] rounded-full w-40 px-6 hover:cursor-pointer;
+  @apply border-1 border-[#231f20] rounded-full w-40 px-6 font-light hover:cursor-pointer;
 }
 
 @keyframes slide-to-right {

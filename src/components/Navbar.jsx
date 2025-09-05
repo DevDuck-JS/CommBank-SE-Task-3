@@ -12,17 +12,18 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 library.add(fas, far, fab);
 
 const Navbar = () => {
-  const [open, setOpen] = useState(false);
+  const [openMobileMenu, setOpenMobileMenu] = useState(false);
 
   return (
     <div className="">
       {/* Mobile Navbar menu */}
 
       <div
+        aria-hidden={!openMobileMenu}
         className={[
           "flex items-center h-full w-full text-white bg-[#231F20] fixed top-0 left-0 z-500",
-          !open && "-translate-x-full",
-          open && "animate-[slide-to-right_600ms_ease-out_forwards]",
+          !openMobileMenu && "-translate-x-full pointer-events-none",
+          openMobileMenu && "animate-[slide-to-right_500ms_ease-out_forwards]",
           "will-change-transform motion-reduce:animate-none",
         ].join(" ")}
       >
@@ -32,7 +33,7 @@ const Navbar = () => {
             <FontAwesomeIcon
               icon="fa-solid fa-xmark"
               className="hover:cursor-pointer"
-              onClick={() => setOpen(false)}
+              onClick={() => setOpenMobileMenu(false)}
             />
           </div>
           {/* Top menu */}
@@ -145,7 +146,7 @@ const Navbar = () => {
           <FontAwesomeIcon
             icon="fa-solid fa-bars"
             className="ps-8 hover:cursor-pointer"
-            onClick={() => setOpen(true)}
+            onClick={() => setOpenMobileMenu(true)}
           />
           <img src={Logo} className="w-auto h-10 ps-8" />
         </div>
@@ -158,7 +159,7 @@ const Navbar = () => {
             <span>
               <FontAwesomeIcon icon="fa-solid fa-lock" />
             </span>
-            <span className="font-bold ps-2">Log on</span>
+            <span className="font-semibold ps-2">Log on</span>
           </div>
         </div>
       </div>
