@@ -1,6 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-
-import UnderMaintenance from "../pages/UnderMaintenance.jsx";
+import { Link } from "react-router-dom";
 
 const ContentNavBar = () => {
   return (
@@ -12,7 +10,6 @@ const ContentNavBar = () => {
         <a href="#in-emergency" className="nav-item">
           In an emergency
         </a>
-        {/* <div className="nav-item">Tool & support</div> */}
       </div>
 
       {/* Button */}

@@ -4,17 +4,17 @@ const Hero = ({ hero }) => {
   return (
     <div className="bg-white py-16 ">
       <div className="border-l-16 border-amber-300 px-12">
-        <p className="text-[40px] font-bold mb-6">{hero.title}</p>
+        <h1>{hero.title}</h1>
         {hero.contents.map((content) => (
-          <p className="text-sm font-light mb-4">{content.paragraph}</p>
+          <p>{content.paragraph}</p>
         ))}
-        <div className="pt-6">
-          {hero.button.text && (
-            <div className="primary-button w-fit">
+        {hero.button.text && (
+          <div className="pt-6">
+            <p className="primary-button w-fit">
               <Link to={hero.button.path}>{hero.button.text}</Link>
-            </div>
-          )}
-        </div>
+            </p>
+          </div>
+        )}
       </div>
     </div>
   );
