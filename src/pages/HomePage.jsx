@@ -1,12 +1,12 @@
 import React from "react";
-import Hero from "../components/Hero.jsx";
+import Background from "../components/Background.jsx";
 import Content from "../components/Content.jsx";
 
 const HomePage = () => {
   return (
     <>
       <div>
-        <Hero />
+        <Background />
         <Content />
       </div>
     </>

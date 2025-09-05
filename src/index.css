@@ -47,9 +47,9 @@
 }
 
 .primary-button {
-  @apply flex items-center px-8 bg-primary h-12 rounded-4xl font-light;
+  @apply flex items-center px-8 bg-primary h-12 rounded-4xl font-light hover:cursor-pointer;
 }
 
 .secondary-button {
-  @apply text-[#231f20] border-1 border-[#231f20] rounded-full w-40 px-6;
+  @apply text-[#231f20] border-1 border-[#231f20] rounded-full w-40 px-6 hover:cursor-pointer;
 }

@@ -23,7 +23,7 @@ const Footer = () => {
             {/* Footer menu */}
             <div className="grid grid-cols-1 md:grid-cols-4 px-16 py-6">
               {footerItems.map((footerItem) => (
-                <ul>
+                <ul key={footerItem.id}>
                   <li className="font-bold mb-2">{footerItem.title}</li>
                   {footerItem.items.map((item) => (
                     <li className="font-light mb-2 hover:underline hover:underline-offset-4">

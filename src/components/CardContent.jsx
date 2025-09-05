@@ -9,9 +9,12 @@ const CardContent = ({ tip }) => {
             <ul className="list-disc">
               {tip.tips.map((item, index) => (
                 <li key={index}>
-                  {item.highlight && (
-                    <span className="font-bold"> {item.highlight}</span>
-                  )}
+                  {
+                    (item.highlight && (
+                      <span className="font-bold"> {item.highlight}</span>
+                    ),
+                    [])
+                  }
                   {item.description}
                 </li>
               ))}

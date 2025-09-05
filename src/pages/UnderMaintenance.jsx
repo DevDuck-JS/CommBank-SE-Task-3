@@ -1,11 +1,16 @@
 import { Link } from "react-router-dom";
+import Hero from "../components/Hero";
+import heroMaintenance from "../data/heroMaintenance.json";
 
 export default function UnderMaintenance() {
   return (
     <>
       <div className="relative px-8 z-100">
         <div className="w-full">
-          <div className="bg-white pt-16 pb-8 ">
+          {heroMaintenance.map((hero) => (
+            <Hero key={hero.id} hero={hero} />
+          ))}
+          {/* <div className="bg-white pt-16 pb-8 ">
             <div className="border-l-16 border-amber-300 px-12">
               <h1 className="text-[40px] font-bold mb-6">
                 Cybersecurity Awareness Test Important Message
@@ -30,7 +35,7 @@ export default function UnderMaintenance() {
                 </Link>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

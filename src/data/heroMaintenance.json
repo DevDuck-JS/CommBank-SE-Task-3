@@ -1,0 +1,16 @@
+[
+  {
+    "id": "1",
+    "title": "Cybersecurity Awareness Test Important Message",
+    "sub-heading": "Scheduled Maintenance.",
+    "contents": [
+      {
+        "paragraph": "Due to scheduled maintenance, Cybersecurity Awareness Test is unavailable."
+      },
+      {
+        "paragraph": "If you require any further assistance, please contact our Support Helpdesk on 13 2221, available 24 hours a day, 7 days a week."
+      }
+    ],
+    "button": { "text": "Go back", "path": "/" }
+  }
+]

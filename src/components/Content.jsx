@@ -1,28 +1,20 @@
-import React from "react";
 import ContentNavBar from "./ContentNavBar.jsx";
 import Card from "./Card.jsx";
 import ListContent from "./ListContent.jsx";
 import EmergencyImage from "../assets/EmergencyImage.png";
-import chatIcon from "../assets/chatIcon.svg";
-import phoneIcon from "../assets/phoneIcon.svg";
-import branchIcon from "../assets/branchIcon.svg";
+import Hero from "../components/Hero.jsx";
+
+import heroCyberSecurityTips from "../data/heroCyberSecurityTips.json";
 
 const Content = () => {
   return (
     <>
       <div className="relative px-8 z-100">
         <div className="pt-20 w-1/2 ">
-          {/* Header */}
-          <div className="bg-white py-16 ">
-            <div className="border-l-16 border-amber-300 px-12">
-              <p className="text-[40px] font-bold mb-6">Cybesecurity Tips</p>
-              <p className="text-sm font-light">
-                Protecting your money online starts with smart habits. Strong
-                passwords, alerts, and safe browsing go a long way toward
-                keeping your accounts secure.
-              </p>
-            </div>
-          </div>
+          {/* Hero */}
+          {heroCyberSecurityTips.map((hero) => (
+            <Hero key={hero.id} hero={hero} />
+          ))}
         </div>
 
         {/* Content */}
@@ -44,10 +36,7 @@ const Content = () => {
         {/* In an emergency */}
         <div id="in-emergency" className="bg-white p-16 scroll-mt-20">
           <div className="flex flex-col-reverse">
-            {/* Text - Row on XL */}
-
             <ListContent />
-
             <div className="w-full">
               <img
                 src={EmergencyImage}
