@@ -60,3 +60,12 @@
 .secondary-button {
   @apply border-1 border-[#231f20] rounded-full w-40 px-6 hover:cursor-pointer;
 }
+
+@keyframes slide-to-right {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(calc(100vw - 100%));
+  }
+}
