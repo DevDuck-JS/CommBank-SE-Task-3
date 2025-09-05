@@ -1,5 +1,34 @@
 @import "tailwindcss";
 
+@theme {
+  /* Cusom colors */
+  --color-primary: #ffcc00; /* Primary yellow */
+  --color-secondary: #ffff00; /* Beacon yellow */
+  --color-text: #1e1e1e;
+
+  /* Custom typography */
+  --font-display: "Gill Sans", "Lucida Sans";
+  --font-size-title: 70pt;
+  --font-size-subheading: 38pt;
+  --font-size-body: 18pt;
+}
+
+@layer base {
+  body {
+    color: var(--color-text);
+    font-family: var(--font-display);
+  }
+  h1 {
+    font-size: var(--font-size-title);
+  }
+  h2 {
+    font-size: var(--font-size-subheading);
+  }
+  p {
+    font-size: var(--font-size-body);
+  }
+}
+
 .nav-item {
   @apply pt-2 border-transparent border-b-4 hover:border-amber-200 h-[80px] flex items-center text-[16px] font-semibold xl:ms-8 lg:ms-2.5;
 }
@@ -10,4 +39,8 @@
 
 .mobile-nav-item {
   @apply flex font-light items-center mb-10;
+}
+
+.highlighted-button {
+  @apply flex items-center px-8 bg-primary h-12 rounded-4xl font-light;
 }

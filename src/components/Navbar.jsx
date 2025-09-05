@@ -153,7 +153,7 @@ const Navbar = () => {
           <div className="flex px-7 border-l-1 border-gray-200 h-full items-center">
             <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" />
           </div>
-          <div className="flex bg-[#FFCC00] px-4 min-h-full items-center">
+          <div className="flex bg-primary px-4 min-h-full items-center">
             <span>
               <FontAwesomeIcon icon="fa-solid fa-lock" />
             </span>

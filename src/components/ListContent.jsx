@@ -6,14 +6,14 @@ const ListContent = () => {
     <div className="pt-16 pe-16 w-full lg:w-1/2">
       <p className="text-4xl font-bold mb-10">{EmergencyTips.title}</p>
       <div className="ps-5 mb-4">
-        {EmergencyTips.tips.map((tip) => (
-          <ul className="list-disc font-light space-y-2">
+        <ul className="list-disc font-light space-y-2">
+          {EmergencyTips.tips.map((tip) => (
             <li>
               <span className="font-bold">{tip.highlight} </span>
               {tip.description}
             </li>
-          </ul>
-        ))}
+          ))}
+        </ul>
       </div>
     </div>
   );
