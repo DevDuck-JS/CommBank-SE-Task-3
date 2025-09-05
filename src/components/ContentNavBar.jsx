@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const ContentNavBar = () => {
   return (
-    <div className="flex bg-white h-20 justify-between border-2 border-gray-100 px-8 sticky top-0 z-500">
+    <div className="flex bg-white h-20 justify-between shadow-sm px-8 sticky top-0 z-500">
       <div className="hidden lg:flex justify-between items-center">
         <a href="#home-security" className="nav-item">
           Financial security

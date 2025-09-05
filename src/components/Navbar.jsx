@@ -15,7 +15,7 @@ const Navbar = () => {
   const [openMobileMenu, setOpenMobileMenu] = useState(false);
 
   return (
-    <div className="">
+    <div className="relative z-900">
       {/* Mobile Navbar menu */}
 
       <div
