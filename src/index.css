@@ -11,26 +11,33 @@
   --color-neutral-black: #1e1e1e;
 
   /* Custom typography */
-  --font-display: "Gill Sans", "Lucida Sans";
-  --font-size-title: 70pt;
-  --font-size-subheading: 38pt;
-  --font-size-body: 18pt;
+  --font-display: "Mono", "sans-serif";
+  --font-size-title: 40px;
+  --font-size-section-heading: 32px;
+  --font-size-subsection-heading: 20px;
+  --font-size-body: 16px;
 }
 
 @layer base {
   body {
     color: var(--color-text);
-    /* font-family: var(--font-display); */
     background-color: var(--color-neutral-lightGray);
   }
   h1 {
     font-size: var(--font-size-title);
+    font-weight: var(--font-weight-semibold);
   }
   h2 {
-    font-size: var(--font-size-subheading);
+    font-size: var(--font-size-section-heading);
+    font-weight: var(--font-weight-semibold);
+  }
+  h3 {
+    font-size: var(--font-size-subsection-heading);
+    font-weight: var(--font-weight-semibold);
   }
   p {
     font-size: var(--font-size-body);
+    font-weight: var(--font-weight-light);
   }
 }
 
@@ -51,5 +58,14 @@
 }
 
 .secondary-button {
-  @apply text-[#231f20] border-1 border-[#231f20] rounded-full w-40 px-6 hover:cursor-pointer;
+  @apply border-1 border-[#231f20] rounded-full w-40 px-6 font-light hover:cursor-pointer;
+}
+
+@keyframes slide-to-right {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(calc(100vw - 100%));
+  }
 }

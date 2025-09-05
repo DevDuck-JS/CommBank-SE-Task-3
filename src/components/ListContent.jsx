@@ -4,13 +4,15 @@ import EmergencyTips from "../data/emergencyTips.json";
 const ListContent = () => {
   return (
     <div className="pt-16 pe-16 w-full lg:w-1/2">
-      <p className="text-4xl font-bold mb-10">{EmergencyTips.title}</p>
+      <h2 className="mb-10">{EmergencyTips.title}</h2>
       <div className="ps-5 mb-4">
         <ul className="list-disc font-light space-y-2">
           {EmergencyTips.tips.map((tip) => (
             <li>
-              <span className="font-bold">{tip.highlight} </span>
-              {tip.description}
+              <p>
+                <span className="font-bold">{tip.highlight} </span>
+                {tip.description}
+              </p>
             </li>
           ))}
         </ul>

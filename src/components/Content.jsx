@@ -23,9 +23,7 @@ const Content = () => {
         {/* Financial security */}
         <div id="home-security" className="bg-white p-16 scroll-mt-20">
           <div>
-            <p className="text-4xl font-bold mb-6">
-              Financial Cybersecurity Tips
-            </p>
+            <h2 className=" mb-6">Financial Cybersecurity Tips</h2>
             <Card />
           </div>
         </div>

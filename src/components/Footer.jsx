@@ -24,10 +24,14 @@ const Footer = () => {
             <div className="grid grid-cols-1 md:grid-cols-4 px-16 py-6">
               {footerItems.map((footerItem) => (
                 <ul key={footerItem.id}>
-                  <li className="font-bold mb-2">{footerItem.title}</li>
+                  <li className="mb-2">
+                    <p className="font-bold uppercase">{footerItem.title}</p>
+                  </li>
                   {footerItem.items.map((item) => (
-                    <li className="font-light mb-2 hover:underline hover:underline-offset-4">
-                      <a href="#">{item.label}</a>
+                    <li className="mb-2 hover:underline hover:underline-offset-4">
+                      <p>
+                        <a href="#">{item.label}</a>
+                      </p>
                     </li>
                   ))}
                 </ul>
@@ -45,14 +49,14 @@ const Footer = () => {
           {/* Copy right */}
 
           <div className="py-6 px-16 text-[#706d6e]">
-            <p className="pt-4 text-[14px]">
+            <p className="pt-4 text-sm">
               CommBank acknowledges the Traditional Owners of the lands across
               Australia as the continuing custodians of Country and Culture. We
               pay our respect to First Nations peoples and their Elders, past
               and present.
             </p>
 
-            <p className="pt-4 text-[14px]">
+            <p className="pt-4 text-sm">
               ©2025 Commonwealth Bank of Australia ABN 48 123 123 124 AFSL and
               Australian credit licence 234945
             </p>
