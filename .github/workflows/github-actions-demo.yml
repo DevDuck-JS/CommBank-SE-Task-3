@@ -14,6 +14,12 @@ jobs:
         run: npm i
       - name: "Build Dist Folder"
         run: npm run build
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v5.0.0
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-2
       - name: "Upload local objects to CommBank-SE S3 Bucket"
         run: aws s3 sync . s3://amzn-s3-demo-bucket
       - name: "Clear cache at CloudFront"
