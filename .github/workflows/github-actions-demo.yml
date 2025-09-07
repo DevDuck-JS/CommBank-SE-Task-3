@@ -23,7 +23,7 @@ jobs:
       - name: "Upload local objects to CommBank-SE S3 Bucket"
         run: aws s3 sync ./dist s3://commbank-se
       - name: "Clear cache at CloudFront"
-        run: aws cloudfront create-invaldation --distribution-id EZ1G1UUNYRWSQ --paths "/*"
+        run: aws cloudfront create-invalidation --distribution-id EZ1G1UUNYRWSQ --paths "/*"
 # Demo commands
 #   - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
 #   - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
