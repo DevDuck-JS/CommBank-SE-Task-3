@@ -21,7 +21,7 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-2
       - name: "Upload local objects to CommBank-SE S3 Bucket"
-        run: aws s3 sync . s3://amzn-s3-demo-bucket
+        run: aws s3 sync ./dist s3://commbank-se
       - name: "Clear cache at CloudFront"
         run: aws cloudfront create-invaldation --distribution-id EZ1G1UUNYRWSQ --paths "/*"
 # Demo commands
