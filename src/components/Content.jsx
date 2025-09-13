@@ -32,7 +32,7 @@ const Content = () => {
             <ListContent />
 
             {/* Image */}
-            <div className="">
+            <div>
               <img
                 src={EmergencyImage}
                 alt=""
