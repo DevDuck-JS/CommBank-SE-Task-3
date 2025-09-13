@@ -18,7 +18,7 @@ const Footer = () => {
   return (
     <div className="flex mt-16">
       <div className="bg-white w-full px-8 ">
-        <div className="px-6">
+        <div className="px-6 content-max-width mx-auto">
           <div className="border-b-1 border-gray-200 relative">
             {/* Footer menu */}
             <div className="grid grid-cols-1 md:grid-cols-4 px-16 py-6">

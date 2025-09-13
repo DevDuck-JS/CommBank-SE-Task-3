@@ -41,6 +41,22 @@
   }
 }
 
+.content-max-width {
+  @apply max-w-[1328px] mx-auto;
+}
+
+.hero-banner-module {
+  @apply mt-20;
+}
+
+.banner-content-panel {
+  @apply bg-white py-16;
+}
+
+.banner-content {
+  @apply border-l-16 border-amber-300 px-12;
+}
+
 .nav-item {
   @apply pt-2 border-transparent border-b-4 hover:border-amber-200 h-[80px] flex items-center text-[16px] font-semibold xl:ms-8 lg:ms-2.5;
 }

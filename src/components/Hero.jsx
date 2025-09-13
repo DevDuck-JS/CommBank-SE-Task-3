@@ -1,21 +1,28 @@
-import { Link } from "react-router-dom";
+import Banner from "./Banner.jsx";
+import heroCyberSecurityTips from "../data/heroCyberSecurityTips.json";
+import BannerImage from "../components/BannerImage.jsx";
 
-const Hero = ({ hero }) => {
+const Hero = () => {
   return (
-    <div className="bg-white py-16 ">
-      <div className="border-l-16 border-amber-300 px-12">
-        <h1>{hero.title}</h1>
-        {hero.contents.map((content) => (
-          <p>{content.paragraph}</p>
-        ))}
-        {hero.button.text && (
-          <div className="pt-6">
-            <p className="primary-button w-fit">
-              <Link to={hero.button.path}>{hero.button.text}</Link>
-            </p>
+    <div>
+      <>
+        {/* New  */}
+        <div className="banner relative">
+          <div className="hero-banner-module">
+            {/* Content Panel */}
+            <div className="w-1/2 ">
+              {/* Hero */}
+              {heroCyberSecurityTips.map((content) => (
+                <Banner key={content.id} content={content} />
+              ))}
+            </div>
+            {/* Banner Image */}
+            <div>
+              <BannerImage />
+            </div>
           </div>
-        )}
-      </div>
+        </div>
+      </>
     </div>
   );
 };

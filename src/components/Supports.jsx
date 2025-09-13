@@ -6,7 +6,7 @@ const Supports = () => {
   return (
     <>
       {/* We can help */}
-      <div className="p-16">
+      <div className="p-16 mx-auto content-max-width">
         <h2 className=" mb-6">We can help</h2>
         <div className="flex justify-between">
           <div className="help-item">
